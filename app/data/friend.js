@@ -3,8 +3,8 @@ var friendList = [
         name: "Ahmed Bornaq",
         photo: "http://www.laughspark.info/thumbfiles/705X705/lazy-sleepy-cat-635642252852709296-9587.jpg",
         scores: [
-            1, 1, 1, 1, 1,
-            1, 1, 1, 1, 1
+            1, 2, 1, 2, 1,
+            1, 2, 1, 2, 1
         ]
     },
     {

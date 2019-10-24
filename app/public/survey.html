@@ -15,48 +15,77 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <style>
+        body {
+            background-image: url("https://previews.123rf.com/images/tonefotografia/tonefotografia1704/tonefotografia170400911/77004762-connect-background.jpg");
+            /* background-position: center; */
+            background-repeat: no-repeat;
+        }
+
         .radio-inline {
             width: 14%;
         }
 
         .sentence {
             padding-left: 4%;
-            font-size: 20px;
+            font-size: 17px;
         }
 
         .radio-inline {
+            padding-top: 5px;
+            padding-bottom: 5px;
             margin-left: 13%;
         }
 
         img {
             width: 70%;
         }
+
+        .container1 {
+            padding: 50px;
+
+        }
+
+        h4 {
+            color: blue;
+        }
+
+        .title {
+            color: blue;
+        }
+
+        .card-text {
+            font-size: 20px;
+            padding: 10px;
+            color: teal;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container1 text-center">
             <h2 class="text-primary">Friend Survey</h2>
             <p class="text-info">Answer the following questions to find your best match!</p>
+            <p><a href="/api/friendList">API Friends List</a> | <a
+                    href="https://github.com/pminhtri11/Friend-Finder">GitHub Page</a></p>
         </div>
         <!-- Form -->
         <form>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="inputName">Name</label>
+                    <label class="title" for="inputName">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Tri Phan">
                 </div>
                 <div class="form-group col-md-8">
-                    <label for="inputLink">Link To Your Image</label>
-                    <input type="text" class="form-control" id="photo" placeholder="">
+                    <label class="title" for="inputLink">Link To Your Image</label>
+                    <input type="text" class="form-control" id="photo" placeholder="CatPicture.example">
                 </div>
             </div>
         </form>
 
         <!-- Questions -->
         <div class="container">
-            <h3><strong>Question 1</strong></h3>
+            <h4><strong>Question 1</strong></h4>
             <p class="sentence">I love to try new things (like new foods, independent or foreign films and alternative
                 music).</p>
             <label class="radio-inline"><input class="question1" type="radio" name="question1" value="1" checked>1
@@ -70,7 +99,7 @@
             <label class="radio-inline"><input class="question1" type="radio" name="question1" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 2</strong></h3>
+            <h4><strong>Question 2</strong></h4>
             <p class="sentence">I’m a spontaneous person. I don’t need to plan things out.</p>
             <label class="radio-inline"><input class="question2" type="radio" name="question2" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -83,7 +112,7 @@
             <label class="radio-inline"><input class="question2" type="radio" name="question2" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 3</strong></h3>
+            <h4><strong>Question 3</strong></h4>
             <p class="sentence">I talk to a lot of different people at parties.</p>
             <label class="radio-inline"><input class="question3" type="radio" name="question3" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -96,7 +125,7 @@
             <label class="radio-inline"><input class="question3" type="radio" name="question3" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 4</strong></h3>
+            <h4><strong>Question 4</strong></h4>
             <p class="sentence">I don't like to draw attention to myself.</p>
             <label class="radio-inline"><input class="question4" type="radio" name="question4" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -109,7 +138,7 @@
             <label class="radio-inline"><input class="question4" type="radio" name="question4" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 5</strong></h3>
+            <h4><strong>Question 5</strong></h4>
             <p class="sentence">I spend a lot of time helping others with their problems.</p>
             <label class="radio-inline"><input class="question5" type="radio" name="question5" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -122,7 +151,7 @@
             <label class="radio-inline"><input class="question5" type="radio" name="question5" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 6</strong></h3>
+            <h4><strong>Question 6</strong></h4>
             <p class="sentence">Gaming is more than just recreation, it’s a culture.</p>
             <label class="radio-inline"><input class="question6" type="radio" name="question6" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -135,7 +164,7 @@
             <label class="radio-inline"><input class="question6" type="radio" name="question6" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 7</strong></h3>
+            <h4><strong>Question 7</strong></h4>
             <p class="sentence">I never make decisions that I later feel bad about.</p>
             <label class="radio-inline"><input class="question7" type="radio" name="question7" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -148,7 +177,7 @@
             <label class="radio-inline"><input class="question7" type="radio" name="question7" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 8</strong></h3>
+            <h4><strong>Question 8</strong></h4>
             <p class="sentence">I prefer pizza over hamburger.</p>
             <label class="radio-inline"><input class="question8" type="radio" name="question8" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -161,7 +190,7 @@
             <label class="radio-inline"><input class="question8" type="radio" name="question8" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 9</strong></h3>
+            <h4><strong>Question 9</strong></h4>
             <p class="sentence">Playing a game is fun only when you win.</p>
             <label class="radio-inline"><input class="question9" type="radio" name="question9" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -174,7 +203,7 @@
             <label class="radio-inline"><input class="question9" type="radio" name="question9" value="5">5 (Strongly
                 Agree)</label>
             <hr>
-            <h3><strong>Question 10</strong></h3>
+            <h4><strong>Question 10</strong></h4>
             <p class="sentence">When people succeed, it's because of hard work. Luck has nothing to do with success.</p>
             <label class="radio-inline"><input class="question10" type="radio" name="question10" value="1" checked>1
                 (Strongly Disagree)</label>
@@ -207,7 +236,7 @@
                     <div class="card text-center" style="width: 100%">
                         <img class="card-img-top">
                         <div class="card-body">
-                            <div class="card-text"></div>
+                            <div class="card-text"><strong></strong></div>
                         </div>
                     </div>
                 </div>
