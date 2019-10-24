@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <style>
+        .radio-inline {
+            width: 14%;
+        }
+
+        .sentence {
+            padding-left: 4%;
+            font-size: 20px;
+        }
+
+        .radio-inline {
+            margin-left: 13%;
+        }
+
+        img {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h2 class="text-primary">Friend Survey</h2>
+            <p class="text-info">Answer the following questions to find your best match!</p>
+        </div>
+        <!-- Form -->
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tri Phan">
+                </div>
+                <div class="form-group col-md-8">
+                    <label for="inputLink">Link To Your Image</label>
+                    <input type="text" class="form-control" id="photo" placeholder="">
+                </div>
+            </div>
+        </form>
+
+        <!-- Questions -->
+        <div class="container">
+            <h3><strong>Question 1</strong></h3>
+            <p class="sentence">I love to try new things (like new foods, independent or foreign films and alternative
+                music).</p>
+            <label class="radio-inline"><input class="question1" type="radio" name="question1" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question1" type="radio" name="question1" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question1" type="radio" name="question1" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question1" type="radio" name="question1" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question1" type="radio" name="question1" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 2</strong></h3>
+            <p class="sentence">I’m a spontaneous person. I don’t need to plan things out.</p>
+            <label class="radio-inline"><input class="question2" type="radio" name="question2" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question2" type="radio" name="question2" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question2" type="radio" name="question2" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question2" type="radio" name="question2" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question2" type="radio" name="question2" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 3</strong></h3>
+            <p class="sentence">I talk to a lot of different people at parties.</p>
+            <label class="radio-inline"><input class="question3" type="radio" name="question3" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question3" type="radio" name="question3" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question3" type="radio" name="question3" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question3" type="radio" name="question3" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question3" type="radio" name="question3" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 4</strong></h3>
+            <p class="sentence">I don't like to draw attention to myself.</p>
+            <label class="radio-inline"><input class="question4" type="radio" name="question4" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question4" type="radio" name="question4" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question4" type="radio" name="question4" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question4" type="radio" name="question4" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question4" type="radio" name="question4" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 5</strong></h3>
+            <p class="sentence">I spend a lot of time helping others with their problems.</p>
+            <label class="radio-inline"><input class="question5" type="radio" name="question5" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question5" type="radio" name="question5" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question5" type="radio" name="question5" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question5" type="radio" name="question5" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question5" type="radio" name="question5" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 6</strong></h3>
+            <p class="sentence">Gaming is more than just recreation, it’s a culture.</p>
+            <label class="radio-inline"><input class="question6" type="radio" name="question6" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question6" type="radio" name="question6" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question6" type="radio" name="question6" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question6" type="radio" name="question6" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question6" type="radio" name="question6" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 7</strong></h3>
+            <p class="sentence">I never make decisions that I later feel bad about.</p>
+            <label class="radio-inline"><input class="question7" type="radio" name="question7" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question7" type="radio" name="question7" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question7" type="radio" name="question7" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question7" type="radio" name="question7" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question7" type="radio" name="question7" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 8</strong></h3>
+            <p class="sentence">I prefer pizza over hamburger.</p>
+            <label class="radio-inline"><input class="question8" type="radio" name="question8" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question8" type="radio" name="question8" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question8" type="radio" name="question8" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question8" type="radio" name="question8" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question8" type="radio" name="question8" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 9</strong></h3>
+            <p class="sentence">Playing a game is fun only when you win.</p>
+            <label class="radio-inline"><input class="question9" type="radio" name="question9" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question9" type="radio" name="question9" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question9" type="radio" name="question9" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question9" type="radio" name="question9" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question9" type="radio" name="question9" value="5">5 (Strongly
+                Agree)</label>
+            <hr>
+            <h3><strong>Question 10</strong></h3>
+            <p class="sentence">When people succeed, it's because of hard work. Luck has nothing to do with success.</p>
+            <label class="radio-inline"><input class="question10" type="radio" name="question10" value="1" checked>1
+                (Strongly Disagree)</label>
+            <label class="radio-inline"><input class="question10" type="radio" name="question10" value="2">2
+                (Disagree)</label>
+            <label class="radio-inline"><input class="question10" type="radio" name="question10" value="3">3
+                (Undecided)</label>
+            <label class="radio-inline"><input class="question10" type="radio" name="question10" value="4">4 (Agree)
+            </label>
+            <label class="radio-inline"><input class="question10" type="radio" name="question10" value="5">5 (Strongly
+                Agree)</label>
+        </div>
+
+        <!-- Submit Button -->
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal"
+            id="submit"><i aria-hidden="true"></i>Submit</button>
+        <hr>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-center" id="exampleModalLabel">Your Best Match </h2>
+                </div>
+                <div class="modal-body">
+                    <div class="card text-center" style="width: 100%">
+                        <img class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var val1 = 1, val2 = 1, val3 = 1, val4 = 1, val5 = 1, val6 = 1, val7 = 1, val8 = 1, val9 = 1, val10 = 1;
+        $(".question1").on("click", function () {
+            val1 = ($(this).val());
+        });
+        $(".question2").on("click", function () {
+            val2 = ($(this).val());
+        });
+        $(".question3").on("click", function () {
+            val3 = ($(this).val());
+        });
+        $(".question4").on("click", function () {
+            val4 = ($(this).val());
+        });
+        $(".question5").on("click", function () {
+            val5 = ($(this).val());
+        });
+        $(".question6").on("click", function () {
+            val6 = ($(this).val());
+        });
+        $(".question7").on("click", function () {
+            val7 = ($(this).val());
+        });
+        $(".question8").on("click", function () {
+            val8 = ($(this).val());
+        });
+        $(".question9").on("click", function () {
+            val9 = ($(this).val());
+        });
+        $(".question10").on("click", function () {
+            val10 = ($(this).val());
+        });
+
+        $("#submit").on("click", function () {
+            event.preventDefault();
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    val1, val2, val3, val4, val5,
+                    val6, val7, val8, val9, val10
+                ]
+            }
+            $.post("/api/friendList", userData, function (data) {
+                console.log("Added to our server")
+            })
+
+            $.get("/api/friendList", userData, function (data) {
+                console.log(data);
+                var scoresArray = [];
+                var z;
+                var userScore = data[data.length - 1].scores;
+                var datalength = data.length - 1;
+
+                for (var i = 0; i < datalength; i++) {
+                    var differeceScore = 0;
+                    var friendScore = data[i].scores;
+                    for (var c = 0; c < userScore.length; c++) {
+                        var math = Math.abs(friendScore[c] - userScore[c]);
+                        differeceScore += math;
+                    }
+                    scoresArray.push(differeceScore);
+                    // console.log(data[i])
+                }
+                console.log(scoresArray);
+
+                var lowestNumber = 1000;
+                for (var b = 0; b < scoresArray.length; b++) {
+                    if (scoresArray[b] < lowestNumber) {
+                        lowestNumber = scoresArray[b];
+                        z = b;
+                    }
+                }
+                console.log("The person your most compatable with is: " + data[z].name);
+
+                var bestMatch = data[z];
+                $(".card-img-top").attr("src", bestMatch.photo);
+                $(".card-text").text(bestMatch.name);
+            });
+        })
+    </script>
+</body>
+
+</html>
